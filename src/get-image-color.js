@@ -67,7 +67,7 @@ var Ready = (function () {
         var callbacks = this.callbacks;
         for (var len = callbacks.length, i = 0; i < len; i++) {
             var cb = callbacks.shift();
-            cb.apply(this, Array.prototype.slice.call(arguments));
+            cb.apply(self, Array.prototype.slice.call(arguments));
         }
     };
     return Ready;
@@ -115,7 +115,7 @@ var ImageBuff = (function () {
             self.trigger();
         };
     };
-    ImageBuff = utils.Class.promote(ImageBuff, "Ready")
+    ImageBuff = utils.Class.promote(ImageBuff, "Ready");
     return ImageBuff;
 })();
 
