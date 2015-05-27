@@ -5,3 +5,5 @@
 灵感来自: [color-thief](https://github.com/lokesh/color-thief)
 
 感谢: [Lokesh Dhakar](https://github.com/lokesh)
+
+作者偷懒 用法看 demo 代码
