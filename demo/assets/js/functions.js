@@ -14,7 +14,7 @@ function rgb2hex(red, green, blue) {
 var test = new ImageColor(imgSrc, {  //imgSrc 支持 url 和 img对象 不能支持跨域图片
     colorCount: 10,             // 最大颜色数
     quality: 4,                 // 颜色质量 1~10
-    range: [210, 104, 132, 140] // 原图片范围 [x, y, width, height] demo范围为百度中心的狼爪
+    //range: [210, 104, 132, 140] // 原图片范围 [x, y, width, height] demo范围为百度中心的狼爪 默认为整张图片
 });
 test.ready(function (res) {
     document.body.appendChild(this.canvasImage.imgBuff.image);
