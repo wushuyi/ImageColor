@@ -39,7 +39,7 @@ var utils = {
 
 var Ready = (function () {
     function Ready() {
-        p.initialization();
+        this.initialization();
     }
 
     var p = Ready.prototype;
